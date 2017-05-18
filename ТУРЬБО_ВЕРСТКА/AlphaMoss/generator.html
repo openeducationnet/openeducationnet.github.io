@@ -1,0 +1,675 @@
+<!--
+   ____                   ______    _                 _   _             _   _      _   
+  / __ \                 |  ____|  | |               | | (_)           | \ | |    | |  
+ | |  | |_ __   ___ _ __ | |__   __| |_   _  ___ __ _| |_ _  ___  _ __ |  \| | ___| |_ 
+ | |  | | '_ \ / _ \ '_ \|  __| / _` | | | |/ __/ _` | __| |/ _ \| '_ \| . ` |/ _ \ __|
+ | |__| | |_) |  __/ | | | |___| (_| | |_| | (_| (_| | |_| | (_) | | | | |\  |  __/ |_ 
+  \____/| .__/ \___|_| |_|______\__,_|\__,_|\___\__,_|\__|_|\___/|_| |_|_| \_|\___|\__|
+        | |                                                                            
+        |_|       
+
+GeneratorPage
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OpenEducation</title>
+    <!-- Сообщаем браузеру, чтобы он реагировал на ширину экрана -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../Project/EducationalProgramGenerator.WEB/Content/bootstrap.min2.css">
+    <!--Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--Иконки Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Стиль с темами -->
+    <link rel="stylesheet" href="../../Project/EducationalProgramGenerator.WEB/Content/OpenEDU2.css">
+    <link rel="stylesheet" href="../../Project/EducationalProgramGenerator.WEB/Content/icons/style.css">
+    <link rel="stylesheet" href="../../Project/EducationalProgramGenerator.WEB/Content/skin-black-light.css">
+     <!-- Select2 -->
+  <link rel="stylesheet" href="../../Project/EducationalProgramGenerator.WEB/Content/select2.min.css">
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="hold-transition skin-black-light sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Main Header -->
+        <header class="main-header">
+
+            <!-- Лого -->
+            <a href="generator.html" class="logo">
+                <!-- мини лого для сайдбара 50x50  -->
+                <span class="logo-mini"><b>O</b>EDU</span>
+                <!-- Нормальное лого -->
+                <span class="logo-lg"><b>Open</b>Education</span>
+            </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+
+                        <!-- User Account Menu -->
+                        <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- The user image in the navbar-->
+                                <img src="dist/img/avatar.jpg" class="user-image" alt="User Image">
+                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                <span class="hidden-xs">Дмитрий Ботов</span>
+                            </a>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <section class="sidebar">
+
+
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu">
+                    <li class="header">Меню</li>
+                    <!-- Optionally, you can add icons to the links -->
+                    <li class="active"><a href="#"><i class="fa fa-magic"></i> <span>Генератор РПД</span></a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i> <span>Сообщения</span></a></li>
+                    <li><a href="#"><i class="fa fa-users"></i> <span>Пользователи</span></a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar"></i> <span>Учебные планы</span>
+                            <span class="pull-right-container">
+              <span class="label label-primary pull-right">4</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#"><i class="fa fa-link"></i> <span>Многоуровневый список</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#">Клац</a></li>
+                            <li><a href="#">Клик</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.sidebar-menu -->
+            </section>
+
+            <!-- /.sidebar -->
+        </aside>
+
+
+        <div class="content-wrapper">
+            <!-- Content Header-->
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Главная</a></li>
+                <li class="active">Курсы</li>
+                <li class="active">Информатика</li>
+                <li class="active">Разделы</li>
+                <li class="active">Раздел 1: Основы синтаксиса</li>
+            </ol>
+            <section class="content-header">
+
+                <h1>
+                    Курс: Информатика
+                    <small>2016 г.</small>
+                </h1>
+
+
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+
+                    <div class="col-md-8">
+                        <div class="box box-solid">
+                            <div class="box-body">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3 class="box-title">Раздел 1: Основы синтаксиса</h3>
+                                    </div>
+                                    <div class="col-md-6">
+
+                                       
+<div class="label ">
+                                            
+                                                <div class="label label-primary semestr pull-right "><i class="fa fa-graduation-cap"></i> 1 семестр</div>
+                                           
+              </div>
+
+                                    </div>
+                                    <div class="box-header with-border">
+                                    <div class="col-md-12">
+                                        <div class="col-md-4">
+                                           <div href="javascript:void(0)">
+                                            <h4 class="control-sidebar-subheading">
+                                                Количество часов лекций<br>
+                                                
+                                            </h4><span class="label label-primary pull-right">34/36 часов</span> <br>
+
+                                            <div class="progress progress-xxs">
+                                                <div class="progress-bar progress-bar-primary" style="width: 50%"></div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div href="javascript:void(0)">
+                                            <h4 class="control-sidebar-subheading">
+                                                Количество часов практик<br>
+                                                
+                                            </h4><span class="label label-success pull-right">34/36 часов</span> <br>
+
+                                            <div class="progress progress-xxs">
+                                                <div class="progress-bar progress-bar-success" style="width: 50%"></div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div href="javascript:void(0)">
+                                            <h4 class="control-sidebar-subheading">
+                                                Количество часов СРО<br>
+                                                
+                                            </h4><span class="label label-yellow pull-right">34/36 часов</span> <br>
+
+                                            <div class="progress progress-xxs">
+                                                <div class="progress-bar progress-bar-yellow" style="width: 50%"></div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                         
+                                    </div>
+                                    </div>
+                                   
+                                </div>
+
+
+                                <ul class="todo-list">
+                                    <li class="box box-default lection collapsed-box ">
+                                        <div class="box-header with-border">
+                                            <!-- drag handle -->
+<!--
+                                            <span class="handle">
+                        <i class="icon-move"></i>
+                     
+                      </span>
+-->
+                      <div class="dashboard-widget">
+                          <div class="dashboard-widget-draggableHandle handle"></div>
+                      </div>
+                      
+
+
+                                            <!-- checbox -->
+
+                                            <!-- header text -->
+
+                                            <span class="text" contenteditable="true" contenteditable="true">Предмет и задачи информатики.</span>
+                                            <!-- Emphasis label -->
+                                            <div class="label-lection-hrs">
+                                                                   
+                                        
+                                                <div class="label label-primary"><i class="fa fa-clock-o"></i> 2 часа</div>
+                                            </div>
+                                            <br>
+                                            <span class="label label-lection label-primary ">Лекция</span>
+                
+
+
+                                            <!-- General tools such as edit or delete-->
+
+
+                                            <div class="box-tools tools collapsed collapsed-box">
+                                                <i class="fa fa-edit btn-box-tool"></i>
+                                                <i class="fa fa-trash-o btn-box-tool"></i>
+                                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus btn-box-tool collapsed-box"></i> </button>
+                
+
+                                            </div>
+
+                                        </div>
+                                        <div class="box-body box-default" contenteditable="true">
+                                            Предмет и задачи информатики. Способы представления информации. Единицы измерения информации. Принципы хранения, передачи и обработки информации. Основные этапы решения задач с помощью компьютера. Понятие математической модели задачи. Алгоритм и его свойства. Способы представления алгоритмов.
+                                            <br>
+
+                                        </div>
+                                    </li>
+
+                                    <!--PRACTICE BLOCK-->
+
+                                    <li class="box box-default practice  collapsed-box">
+                                        <div class="box-header with-border">
+                                            <!-- drag handle -->
+                                            <div class="dashboard-widget">
+                          <div class="dashboard-widget-draggableHandle handle"></div>
+                      </div>
+
+
+                                            <!-- checbox -->
+
+                                            <!-- header text -->
+                                            
+                                            <span class="text" contenteditable="true">Позиционные системы счисления.</span>
+                                            
+                                            <!-- Emphasis label -->
+                                            <div class="label-practice-hrs">
+                                         
+                                                <div class="label label-green"><i class="fa fa-clock-o"></i> 2 часа</div>
+                                            </div>
+                                            
+                                            
+                                            <!-- Инструменты-->
+                                            <div class="box-tools tools">
+                                                <i class="fa fa-edit btn-box-tool"></i>
+                                                <i class="fa fa-trash-o btn-box-tool"></i>
+                                                <i class="fa fa-chevron-down btn-box-tool" data-widget="collapse"></i>
+                                            </div>
+                                            <br><span class="label label-practice label-green">Практика</span>
+
+                                        </div>
+                                        <div class="box-body box-default" >
+                                            <div contenteditable="true">Перевод чисел из одной СС в другую. Перевод десятичных чисел в другие системы счисления. Перевод недесятичных чисел в десятичную систему счисления. Быстрый перевод.</div>
+                                            <!--                      Список литературы-->
+                                            <div class="box-literature">
+                                                <i class="fa fa-book"></i> Литература
+                                                <ul>
+                                                    <li>Грошев, А. С. Информатика</li>
+                                                    <li>Информатика и программирование : учебное пособие / Р. Ю.Царев, А. Н. Пупков, В. В. Самарин, Е. В. Мыльникова.</li>
+                                                    <li>Грошев, А. С. Информатика</li>
+                                                </ul>
+                                            </div>
+                                            <!--                  end box-literature    -->
+
+                                        </div>
+                                    </li>
+                                    <!--                -->
+                                    <li class="box box-default sro  collapsed-box">
+                                        <div class="box-header with-border">
+                                            <!-- drag handle -->
+                                            <div class="dashboard-widget">
+                          <div class="dashboard-widget-draggableHandle handle"></div>
+                      </div>
+
+                                            <!-- header text -->
+
+                                            <span class="text" contenteditable="true">Логические основы построения ЭВМ.</span>
+
+                                            <!-- Emphasis label -->
+                                                             
+                                            <div class="label-sro-hrs">
+                                                <div class="label label-yellow"><i class="fa fa-clock-o"></i> 2 часа</div>
+                                            </div>
+                                            
+<br>
+                                           <span class="label label-yellow">СРО</span>
+                                            <!--Бокс с инструментами: развернуть, удалить, редактировать-->
+                                            <div class="box-tools tools">
+                                                <i class="fa fa-edit btn-box-tool"></i>
+                                                <i class="fa fa-trash-o btn-box-tool"></i>
+                                                <i class="fa fa-chevron-down btn-box-tool" data-widget="collapse"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="box-body box-default" contenteditable="true">
+                                            Задачи на выполнение логических операций.
+                                            <br>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="box-footer clearfix no-border">
+                                    <button type="button" class="btn btn-default pull-right"><i class="fa fa-plus fa-sro"></i> Добавить СРО </button>
+
+                                    <button type="button" class="btn btn-default pull-right"data-toggle="modal" data-target="#AddPrac"><i class="fa fa-plus fa-pra"></i> Добавить практику </button>
+                                    <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#AddLec"><i class="fa fa-plus fa-lec"></i> Добавить лекцию </button>
+
+<!-- AddLection -->
+<div class="modal fade" id="AddLec" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Добавление новой лекции</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+         <div class="input-group col-xs-12">
+                <label>Название лекции</label>
+                <input type="text" class="form-control" data-toggle="tooltip" data-placement="right" title="" placeholder="Название лекции">
+              </div>
+              <br>
+              <div class="form-group">
+                  <label>Содержание лекции</label>
+                  <textarea class="form-control" data-toggle="tooltip" data-placement="right" title="Здесь может быть не только содержание лекции, но также и ...." rows="3" placeholder="Содержание лекции..."></textarea>
+                </div>
+              </div>
+              
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary">Добавить</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Practice -->
+<div class="modal fade" id="AddPrac" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Добавление новой практики</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+         <div class="input-group col-xs-12">
+                <label>Название практики</label>
+                <input type="text" class="form-control" data-toggle="tooltip" data-placement="right" title="" placeholder="Введите название практики">
+              </div>
+              <br>
+              <div class="form-group">
+                  <label>Содержание практики</label>
+                  <textarea class="form-control" data-toggle="tooltip" data-placement="right" title="Здесь может быть не только содержание практики, но также и перечень всего, что хотите....." rows="3" placeholder="Введите содержание практики..."></textarea>
+                </div>
+                <div class="form-group">
+                    
+                <label>Литература к даной практике </label>
+                    <div class="input-group col-xs-12">
+                <span class="input-group-addon"><i class="fa fa-book"></i></span>
+<select class="form-control select2"  multiple="multiple"  data-toggle="tooltip" data-placement="right" title="..."  data-placeholder="Выберете книги" style="width: 100%;">
+                  <option>Книга 1</option>
+                  <option>Книга 2</option>
+                  <option>Книга 3</option>
+
+                </select>              </div>
+              </div>
+              
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary">Добавить</button>
+      </div>
+    </div>
+  </div>
+</div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <button type="button" class="btn btn-block btn-white" data-toggle="modal" data-target="#AddRazd">Добавить новый раздел</button> 
+                        <!-- AddRazd -->
+<div class="modal fade" id="AddRazd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Добавление нового раздела</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+         <div class="input-group col-xs-12">
+               <div class="col-md-8"><label>Название раздела</label>
+                <input type="text" class="form-control" data-toggle="tooltip" data-placement="right" title="" placeholder="Введите название"></div>
+                <div class="col-md-4">
+                <div class="form-group">
+                <label>Семестр</label>
+                <select class="form-control select2" style="width: 100%;">
+                  <option selected="selected">Первый</option>
+                  <option>Второй</option>
+                  <option>Третий</option>
+                </select>
+              </div>
+              </div>
+              <br>
+              <div class="col-md-4"><label>Часов лекций</label>
+                <input type="text" class="form-control" data-toggle="tooltip" data-placement="right" title="" placeholder="Осталось: 15 чаосв"></div>
+                <div class="col-md-4"><label>Часов практик</label>
+                <input type="text" class="form-control" data-toggle="tooltip" data-placement="right" title="" placeholder="Осталось: 15 чаосв"></div>
+                <div class="col-md-4"><label>Часов СРО</label>
+                <input type="text" class="form-control" data-toggle="tooltip" data-placement="right" title="" placeholder="Осталось: 15 чаосв"></div>
+              </div>
+              <br>
+            
+              </div>
+              
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary">Добавить</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Practice -->
+                    </div>
+                    <!-- /.box-body -->
+
+                    <div class="col-md-4">
+
+                        <div class="box box-default">
+                            <div class="box-header with-border">
+                            <h4 class="box-title">Компетенции Раздела 1</h4>
+                            </div>
+                            <div class="box box-default collapsed-box">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">ОПК-1</h3>
+                                    <span class="description-block">Способностью инсталлировать программное обеспечение</span>
+                                    <div class="box-tools tools pull-right">
+                                        <button type="button" class="btn btn-box-tool-checkbox" data-widget="collapse"><i class="fa fa-chevron-down"></i>
+                </button>
+                                    </div>
+
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                   <div class="box-header-zum"><h4>Знать:</h4></div>
+                                    <div class="form-group">
+                <label>
+                  <input type="checkbox" class="minimal">
+                 <span class="text-zum">о конструировании алгоритмов</span> 
+                </label>
+                <label>
+                  <input type="checkbox" class="minimal">
+                  <span class="text-zum">методы и
+
+технологию программирования</span> 
+                </label>
+                <label>
+                  <input type="checkbox" class="minimal">
+                  <span class="text-zum">абстракции
+
+основных структур данных</span> 
+                </label>
+                <label>
+                  <input type="checkbox" class="minimal">
+                  <span class="text-zum">основные понятия и концепции ООП </span> 
+                </label>
+                
+              </div>
+                               
+<!--                               УМЕТЬ-->
+                               <div class="box-header-zum"><h4>Уметь:</h4></div>
+                                    <div class="form-group">
+                <label>
+                  <input type="checkbox" class="minimal">
+                 <span class="text-zum">о конструировании алгоритмов</span> 
+                </label>
+                <label>
+                  <input type="checkbox" class="minimal">
+                  <span class="text-zum">методы и
+
+технологию программирования</span> 
+                </label>
+                <label>
+                  <input type="checkbox" class="minimal">
+                  <span class="text-zum">абстракции
+
+основных структур данных</span> 
+                </label>
+                <label>
+                  <input type="checkbox" class="minimal">
+                  <span class="text-zum">основные понятия и концепции ООП </span> 
+                </label>
+              </div>
+                               <div class="box-header-zum"><h4>Владеть:</h4></div>
+                                    <div class="form-group">
+                <label>
+                  <input type="checkbox" class="minimal">
+                 <span class="text-zum">о конструировании алгоритмов</span> 
+                </label>
+                <label>
+                  <input type="checkbox" class="minimal">
+                  <span class="text-zum">методы и
+
+технологию программирования</span> 
+                </label>
+                <label>
+                  <input type="checkbox" class="minimal">
+                  <span class="text-zum">абстракции
+
+основных структур данных</span> 
+                </label>
+                <label>
+                  <input type="checkbox" class="minimal">
+                  <span class="text-zum">основные понятия и концепции ООП </span> 
+                </label>
+              </div>
+                                </div>
+                                </div>
+<!--                                ВЛАДЕТЬ-->
+ 
+                                                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+            </section>
+            <!-- /.content -->
+            </div>
+
+            <!-- /.content-wrapper -->
+
+            <!-- Main Footer -->
+            <footer class="main-footer">
+                <!-- To the right -->
+                <div class="pull-right hidden-xs">
+                    Челябинский Государственный Университет
+                </div>
+                <!-- Default to the left -->
+                <strong>Copyright &copy; 2017 <a href="#">Институт Информационных Технологий</a>.</strong>
+            </footer>
+
+
+
+            <!-- ./wrapper -->
+
+            <!-- НЕОБХОДИМЫЕ JS SCRIPTS -->
+            <!-- jQuery 2.2.3 -->
+            <script src="../../Project/EducationalProgramGenerator.WEB/Scripts/jquery-2.2.3.min.js"></script>
+            <!-- jQuery UI 1.11.4 -->
+            <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+            <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+            <script>
+                $.widget.bridge('uibutton', $.ui.button);
+            </script>
+            <!-- Bootstrap 3.3.6 -->
+            <script src="../../Project/EducationalProgramGenerator.WEB/Scripts/bootstrap.min.js"></script>
+            <!-- AppJS -->
+            <script src="../../Project/EducationalProgramGenerator.WEB/Scripts/app.js"></script>
+           <!-- Select2 -->
+<script src="../../Project/EducationalProgramGenerator.WEB/Scripts/select2.full.min.js"></script>
+            
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $(".select2").select2();
+
+    //Datemask dd/mm/yyyy
+    $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+    //Datemask2 mm/dd/yyyy
+    $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
+    //Money Euro
+    $("[data-mask]").inputmask();
+
+    //Date range picker
+    $('#reservation').daterangepicker();
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
+    //Date range as a button
+    $('#daterange-btn').daterangepicker(
+        {
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment()
+        },
+        function (start, end) {
+          $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+    );
+
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass: 'iradio_minimal-blue'
+    });
+    //Red color scheme for iCheck
+    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+      checkboxClass: 'icheckbox_minimal-red',
+      radioClass: 'iradio_minimal-red'
+    });
+    //Flat red color scheme for iCheck
+    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+      checkboxClass: 'icheckbox_flat-green',
+      radioClass: 'iradio_flat-green'
+    });
+
+    //Colorpicker
+    $(".my-colorpicker1").colorpicker();
+    //color picker with addon
+    $(".my-colorpicker2").colorpicker();
+
+    //Timepicker
+    $(".timepicker").timepicker({
+      showInputs: false
+    });
+  });
+</script>
+</body>
+
+</html>
